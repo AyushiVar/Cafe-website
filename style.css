@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+body{
+	font-size: 20px;
+	color: white;
+	overflow-x: hidden;
+	font-family: 'Flamenco', cursive;
+}
+
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+
+.logo-menu{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.logo{
+	width: auto;
+	height: 150px;
+	float: left;
+	margin-top: 20px;
+}
+
+.menu{
+	list-style: none;
+	float: right;
+	margin-top: 60px;
+}
+
+.logo-menu li{
+	display: inline-block;
+	list-style: none;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.logo-menu li a{
+	text-decoration: none;
+	color: white;
+	font-size: 90%;
+	font-weight: 300;
+	padding: 5px 0px;
+	letter-spacing: 1px;
+}
+
+.logo-menu li a:hover{
+	border-bottom: 2px solid #da175a;
+}
+
+
+.content{
+	width: 1180px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1{
+	font-size: 240% ;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 30px;
+	font-weight: lighter;
+}
+
+.anim{
+	animation: changecolor 1s infinite;
+}
+
+@keyframes changecolor{
+	0%{color: orange; }
+	25%{color: #da175a;}
+	50%{color: white;}
+	100%{color: #da175a;}
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 200px;
+	font-weight: 600;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+
+.btn-one{
+
+	margin-right: 15px;
+	background-color: transparent;
+	color: #da175a;
+	border:1px solid #da175a;
+}
+
+.btn-one:hover{
+	background-color: white;
+}
+
+.btn-two{
+	background-color: transparent;
+	color: white;
+	border:1px solid white;
+}
+
+.btn-two:hover{
+	background-color: #da175a;
+}
+.mobile-icon{display: none;}
+
+/*Responsive queries*/
+
+
+@media only screen and (max-width: 1180px){
+	.content{width: 100%;
+		padding: 0 2%;}
+}
+
+@media only screen and (max-width: 998px){
+	h1{font-size: 200%;}}
+
+@media only screen and (max-width: 792px){
+	h1{font-size: 180%;}
+
+	.menu{display: none;}
+
+	.mobile-icon{
+		display: inline-block;
+		float: right;
+		color: white;
+		margin: 30px 20px;
+	}
+
+	.menu{float:left; margin-left: 20px;}
+
+	.menu li{
+		display: block;
+		margin: 0px 15px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
